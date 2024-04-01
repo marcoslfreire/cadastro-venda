@@ -21,7 +21,7 @@ function ProductsPage() {
 
   return (
     <div className="page-container"> {/* Classe CSS para o container da página */}
-      <h1>Products Page</h1>
+      <h1>Cadastre seu produto</h1>
       <ProductForm onSubmit={handleAddProduct} />
       <ProductList products={products} onDelete={handleDeleteProduct} />
     </div>

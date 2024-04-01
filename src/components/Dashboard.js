@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Dashboard({ products, totalRevenue }) {
   return (
     <div>

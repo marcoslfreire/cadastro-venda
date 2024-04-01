@@ -1,0 +1,49 @@
+/* Navbar.css */
+
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+nav {
+  background-color: #6b6a9b;
+  padding: 50px; /* Adiciona um espaço interno ao redor do menu */
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Altera o layout para flexbox */
+}
+
+li {
+  margin-right: 10px; /* Adiciona uma margem entre os itens do menu */
+}
+
+li:last-child {
+  margin-right: 0; /* Remove a margem do último item do menu */
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  color: rgb(112, 7, 7);
+  text-decoration: none;
+  transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.logo {
+  margin-right: 5px; /* Adiciona uma margem à direita da logo */
+  box-shadow: #6b6a9b;
+  border-radius: 50%;
+}
+
+li a:hover {
+  font-weight: bold; /* Torna o texto do link em negrito ao passar o mouse */
+  color: #33f83d; /* Muda a cor do texto ao passar o mouse */
+}
+
+
