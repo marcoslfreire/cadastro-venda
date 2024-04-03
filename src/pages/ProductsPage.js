@@ -8,21 +8,25 @@ function ProductsPage() {
   const [products, setProducts] = useState([]);
 
   const handleAddProduct = (product) => {
-    // Adicionar lógica para adicionar o produto (falta implementar)
-    console.log('Adicionando produto:', product);
-    setProducts([...products, product]);
+    // Adiciona o novo produto à lista de produtos
+    const updatedProducts = [...products, { ...product, id: Date.now() }];
+    // Atualiza a lista de produtos no estado
+    setProducts(updatedProducts);
   };
 
   const handleDeleteProduct = (productId) => {
-    // Adicionar lógica para excluir o produto (falta implementar)
-    console.log('Excluindo produto com ID:', productId);
-    setProducts(products.filter((product) => product.id !== productId));
+    // Remove o produto da lista de produtos com base no ID
+    const updatedProducts = products.filter((product) => product.id !== productId);
+    // Atualiza a lista de produtos no estado
+    setProducts(updatedProducts);
   };
 
   return (
     <div className="page-container"> {/* Classe CSS para o container da página */}
       <h1>Cadastre seu produto</h1>
+      {/* Renderiza o formulário para adicionar produtos */}
       <ProductForm onSubmit={handleAddProduct} />
+      {/* Renderiza a lista de produtos, passando a lista atualizada como propriedade */}
       <ProductList products={products} onDelete={handleDeleteProduct} />
     </div>
   );

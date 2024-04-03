@@ -3,7 +3,7 @@ import React from 'react';
 function ProductList({ products, onDelete }) {
   return (
     <div>
-      <h2>Product List</h2>
+      <h2>Lista de produtos</h2>
       <ul>
         {products.map((product) => (
           <li key={product.id}>

@@ -1,13 +1,13 @@
 // Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Importa os estilos CSS do Navbar
+//import './Navbar.css'; // Importa os estilos CSS do Navbar
+import '..//styles/Navbar.css';
 
 function Navbar() {
   return (
     <nav>
       <ul>
-
       <li>
           <Link to="/products">
             <img src="caminho_para_sua_logo.png" alt="" className="logo" /> {/* Inclui a logo ao lado do link */}
