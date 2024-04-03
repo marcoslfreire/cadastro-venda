@@ -24,7 +24,7 @@ table {
 /* Estilos para as células da tabela */
 td {
     padding: 10px; /* Aumentei o preenchimento para melhorar a aparência */
-    border: 1px solid #ddd;
+    border: 10px solid #070707;
 }
 
 /* Estilos para os inputs de texto e número */
@@ -32,23 +32,25 @@ input[type="text"],
 input[type="number"] {
     width: calc(100% - 20px); /* Reduzi um pouco a largura para melhorar a aparência */
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 3px solid #f765652d;
+    border-radius: 15px;
+    margin-bottom: 3px;
 }
 
 /* Estilos para os botões */
 button {
-    padding: 10px 20px; /* Reduzi o preenchimento horizontal para um botão mais compacto */
-    background-color: #007bff;
+    padding: 10px 20px ; /* Reduzi o preenchimento horizontal para um botão mais compacto */
+    background-color: #cf3737;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Adicionei uma transição suave de cor de fundo */
+    transition: background-color 0.5s; /* Adicionei uma transição suave de cor de fundo */
+    width: 97%;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #b90a0a;
 }
 
 /* Adicionando um fundo suave atrás da tabela */
