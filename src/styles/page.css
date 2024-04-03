@@ -40,7 +40,7 @@ input[type="number"] {
 /* Estilos para os botões */
 button {
     padding: 10px 20px ; /* Reduzi o preenchimento horizontal para um botão mais compacto */
-    background-color: #cf3737;
+    background-color: #b90a0a;
     color: white;
     border: none;
     border-radius: 50px;
@@ -50,7 +50,7 @@ button {
 }
 
 button:hover {
-    background-color: #b90a0a;
+    background-color: #e65656ef;
 }
 
 /* Adicionando um fundo suave atrás da tabela */
